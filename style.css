@@ -1,0 +1,521 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+
+
+
+/*CSS*/
+body {
+    font-family: "DM Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #050418;
+}
+.background-container{
+    position: relative;
+    width: 1160px;
+    margin: 0 auto;
+}
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/images/background.png);
+    opacity: 0.2;
+    background-size:contain;
+    background-repeat: repeat;
+    background-position: top left;
+    pointer-events: none;
+}
+
+/*HEADER*/
+.Header{
+    top: 40px;
+    left: 140px;
+    width: 1160px;
+    height:40px;
+    display: flex;
+    align-items: center;
+    margin: 40px auto;
+    justify-content: space-between;
+}
+.Logo-Container{
+    display: inline-block;
+}
+.ButtonNav-Container{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 40px;
+}
+.ButtonNav{
+    font-size: 16px;
+    font-weight: 700;
+    color: #E8DCFF;
+}
+
+.BontonRouge{
+    font-size: 16px;
+    font-weight: 700;
+    color: #050418;
+    background-color: #FD7272;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+}
+
+/*H1*/
+.top-container{
+
+    display: flex;
+    justify-content: space-between;
+    margin: 250px auto 0;
+}
+.h1-container{
+    width: 560px;
+    row-gap: 20px;
+}
+h1{
+    position: relative;
+    font-size: 42px;
+    font-weight: 700;
+    color: #E6DAFF;
+    padding-bottom: 20px;
+    z-index: 1;
+}
+#circle{
+    position: absolute;
+    width: 298px;
+    height: 91px;
+    left: 200px;
+    top: 254px;
+    z-index: 0;
+}
+.h-txt{
+    font-size: 16px ;
+    font-weight: 400;
+    color: #E6DAFF;
+}
+/*H1 Repairman*/
+.visual-container{
+    width: 360px;
+    display: grid;
+    place-items: center;
+    margin-right: 100px;
+}
+.visual{
+    position: relative;
+    width: 360px;
+    height: 180px;
+    background-color: #CFFFED;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+.frame{
+    position: absolute;
+    width: 360px;
+    height: 180px;
+    background-image: url(assets/images/frame.png);
+    opacity: 0.2;
+    background-repeat:repeat;
+    background-position: top left;
+    pointer-events: none;
+}
+.repairman {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: auto;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/*Search bar*/
+.search-drop{
+    position: relative;
+    display: flex;
+    box-shadow: inset 0 0 0 2px #050418;
+    border-radius: 60px;
+    background-color: #FFFFFF;
+    margin-top: 150px;
+    align-items: center;
+    padding: 0px 40px 0px 40px;
+    gap: 40px;
+}
+.buttonbar{
+    display: flex;
+    height: 100%;
+}
+.dropdown{
+    position: relative;
+    border-right: 2px solid #050418;
+    padding-right: 25px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    height: 100%;
+}
+#dropdown2{
+    margin-left: 25px;
+}
+#dropdown3{
+    margin-left: 25px;
+}
+.dropdown .dropbutton{
+    display: flex;
+    flex-direction:inherit;
+    height: 100%;
+    width: 110%;
+    padding: 20px 10px 20px 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background: #fff;
+    font-weight: 700;
+    gap: 10px;
+}
+.dropdown .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    z-index: 1;
+}
+.dropdown .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown.show .dropdown-content {
+    display: block;
+}
+.search-txt{
+    display: flexbox;
+    position: relative;
+}
+.exemple{
+    width: 410px;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    border-color: transparent;
+}
+.line{
+    height: 2px;
+    width: 406px;
+    background-color: #050418;
+    opacity: 0.4;
+}
+.search-bar-result{
+width: auto;
+height: 295px;
+display: flex;
+background-color: #E8DDFE;
+margin-top: -30px;
+border-radius: 0px 0px 20px 20px;
+}
+/*Search bar furniture*/
+.furniture{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    padding: 50px 80px 0px 80px;
+    gap: 40px;
+}
+.myfurniture{
+    display: flex;
+    gap: 40px;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.presentation{
+    font-size: 16px;
+    font-weight: 700;
+    color: #050418;
+    padding-bottom: 10px;
+}
+.txt{
+    font-size: 16px;
+    font-weight: 400;
+    color: #050418;
+}
+.validation{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    background-color: #CFFFED;
+    padding: 50px 80px 0px 80px;
+    border-radius: 0px 0px 20px 0px;
+    gap: 40px;
+}
+.result{
+    display: flex;
+    gap: 40px;
+}
+.buttoncontact{
+    display: flex;
+    font-size: 16px;
+    font-weight: 700;
+    color: #050418;
+    background-color: transparent;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid #050418;
+    border-radius: 20px;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+/*H2*/
+.h2-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+}
+h2{
+    position: relative;
+    display: flex;
+    align-items: center;
+    /*width: 370px;*/
+    font-size: 32px;
+    font-weight: 700;
+    color: #E6DAFF;
+    padding-bottom: 20px;
+    z-index: 1;
+}
+/*Tuto result*/
+#circle2{
+    position: absolute;
+    width: 252px;
+    height: 62px;
+    left: 505px;
+    top: 1095px;
+    z-index: 0;
+}
+.tutoresultats{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tutos{
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+}
+.tutosearchvideo{
+    width: 360px;
+    height: 228px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+#tuto1{
+    background-image: url(assets/images/vid1.png);
+}
+#tuto2{
+    background-image: url(assets/images/vid2.png);
+}
+#tuto3{
+    background-image: url(assets/images/vid3.png);
+}
+.generalbutton{
+    display: flex;
+    font-size: 16px;
+    font-weight: 700;
+    color: #E8DDFE;
+    background-color: transparent;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid #E8DDFE;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+/*Services*/
+.services{
+    display: flex;
+    position: relative;
+    margin-top: 200px;
+}
+.contentservice{
+    width: 33%;
+}
+#circle3{
+    position: absolute;
+    width: 216px;
+    height: 55px;
+    left: 13%;
+    top: -12px;
+    z-index: 0;
+}
+.exempleservices{
+    margin-left: 140px;
+}
+
+/*Tuto plus*/
+.tutoplus{
+    display: flex;
+    position: relative;
+    margin-top: 220px;
+}
+#tutoplusimg{
+    margin-right: 140px;
+}
+.contenttutoplus{
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+#circle4{
+    position: absolute;
+    width: 154px;
+    height: 56px;
+    left: 79%;
+    top: 32px;
+    z-index: 0;
+}
+
+/*RDV*/
+.rdv{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 200px;
+}
+.contentcontact{
+    display: flex;
+    gap: 40px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+}
+.furniturecontact{
+    background-color: #E8DDFE;
+    display: flex;
+    align-items: center;
+    gap: 350px;
+    padding: 20px 40px 20px 40px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+.contactbox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+.contactboxbis{
+    display: flex;
+    gap: 20px;
+}
+/*JS*/
+.buttonchoice {
+    width: 50%;
+    background-color: transparent;
+    color: #050418;
+    border: 1px solid #050418;
+    border-radius: 60px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+/*JS fin*/
+.buttonchoice.active {
+    background-color: #050418;
+    color: white;
+}
+.identify{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.inputchoice{
+    width: 100%;
+    background-color: transparent;
+    color: #050418;
+    border: 1px solid #050418;
+    border-radius: 60px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.inputchoicemessage{
+    width: 100%;
+    height: 125px;
+    background-color: transparent;
+    color: #050418;
+    border: 1px solid #050418;
+    border-radius: 35px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.buttonsend{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.map{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.contentinfo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <title>Repar'Tout</title>
+    </head>
+    <body>
+        <div class="overlay"></div>
+        <div class="background-container">
+            <div class="Header">
+                <div class="Logo-Container">
+                    <img src=".\assets\images\logo.png" alt="Repar'Tout">
+                </div>
+                <div class="ButtonNav-Container">
+                    <a href="#" class="ButtonNav">Nos services</a>
+                    <a href="#" class="ButtonNav">Nos tutos</a>
+                    <a href="#" class="BontonRouge">Contact</a>
+                </div>
+            </div>
+            <div class="top-container">
+                <div class="h1-container">
+                    <img src=".\assets\images\circle.png" alt="circle" id="circle">
+                    <h1>Donnez une seconde vie à vos électroménagers !</h1>
+                    <p class="h-txt">Prolongez la durée de vie de vos appareils avec nos services de réparation et d'entretien. Faites un geste pour la planète tout en réalisant des économies !</p>
+                </div>
+                <div class="visual-container">
+                    <div class="visual">
+                        <div class="frame"></div>
+                        <img src=".\assets\images\repairman.png" alt="repairman" class="repairman">
+                    </div>
+                    <a href="#" class="BontonRouge">Prendre contact avec un professionel</a>
+                </div>
+            </div>
+            <div class="search">
+                <div class="search-drop">
+                    <div class="buttonbar">
+                        <div class="dropdown" id="dropdown1">
+                            <button class="dropbutton">Mon type d'appareil  <i class="fa-solid fa-chevron-down"></i></button>
+                            <div class="dropdown-content">
+                                <a href="#">Appareil 1</a>
+                                <a href="#">Appareil 2</a>
+                                <a href="#">Appareil 3</a>
+                            </div>
+                        </div>
+                        <div class="dropdown" id="dropdown2">
+                            <button class="dropbutton">La marque  <i class="fa-solid fa-chevron-down"></i></button>
+                            <div class="dropdown-content">
+                                <a href="#">Marque 1</a>
+                                <a href="#">Marque 2</a>
+                                <a href="#">Marque 3</a>
+                            </div>
+                        </div>
+                        <div class="dropdown" id="dropdown3">
+                            <button class="dropbutton">Le modèle  <i class="fa-solid fa-chevron-down"></i></button>
+                            <div class="dropdown-content">
+                                <a href="#">Modèle 1</a>
+                                <a href="#">Modèle 2</a>
+                                <a href="#">Modèle 3</a>
+                            </div>
+                         </div>
+                        </div>
+                     <div class="search-txt">
+                        <input type="text" placeholder="J'ai un lave-vaisselle Philips" class="exemple">
+                        <div class="line"></div>
+                    </div>
+                    <div class="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                </div>
+                <div class="search-bar-result">
+                    <div class="furniture">
+                        <div class="myfurniture">
+                            <div class="icons">
+                                <img src=".\assets\images\washingmachine.png" alt="washingmachine">
+                            </div>
+                            <div class="furnitureinfos">
+                                <p class="presentation">Mon appareil</p>
+                                <div class="furnitureresult">
+                                    <p class="txt">Bosch WAN28258FR</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="validation">
+                        <div class="result">
+                            <div class="yeah">
+                                <img src=".\assets\images\yeah.png" alt="yeah">
+                            </div>
+                            <div class="content">
+                                <div class="contentresult">
+                                    <p class="presentation">Bonne nouvelle !</p>
+                                    <p class="txt">Votre produit est réparable chez nous.</p>
+                                </div>
+                                <button class="buttoncontact">Prendre contact<i class="fa-regular fa-envelope"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tutoresultats">
+                <div class="h2-container">
+                    <img src=".\assets\images\circle.png" alt="circle" id="circle2">
+                    <h2>Vous souhaitez <br> le réparer vous-même ?</h2>
+                    <p class="h-txt">Découvrez notre sélection de tutos en lien avec votre produit</p>
+                </div>
+                <div class="tutos">
+                    <div class="tutosearch">
+                        <div class="tutosearchvideo" id="tuto1"></div>
+                        <p class="h-txt">Top 3 des manières les plus pratiques pour appuyer sur un bouton de lave-vaisselle</p>
+                    </div>
+                    <div class="tutosearch">
+                        <div class="tutosearchvideo" id="tuto2"></div>
+                        <p class="h-txt">Comment admirer vos outils une fois que vous les avez posé sur une table</p>
+                    </div>
+                    <div class="tutosearch">
+                        <div class="tutosearchvideo" id="tuto3"></div>
+                        <p class="h-txt">Regardez cet homme poncer ce meuble de manière absolument magistrale</p>
+                    </div>
+                </div>
+                <button class="generalbutton">Voir tous les tutos</button>
+            </div>
+            <div class="services">
+                <div class="contentservice">
+                    <img src=".\assets\images\circle.png" alt="circle" id="circle3">
+                    <h2>Découvrez nos services</h2>
+                    <p class="h-txt">Découvrez nos services de réparation d'électroménager, avec des techniciens qualifiés qui assurent des diagnostics rapides et des réparations efficaces pour toutes les marques et modèles. Profitez de notre expertise professionnelle et de tarifs compétitifs pour un dépannage fiable et durable.</p>
+                    <button class="generalbutton">Voir nos services</button>
+                </div>
+                <div class="exempleservices">
+                    <img src=".\assets\images\exemples.png" alt="exemple">
+                </div>
+            </div>
+            <div class="tutoplus">
+                <img src=".\assets\images\tutoplus.png" alt="tutoplus" id="tutoplusimg">
+                <div class="contenttutoplus">
+                    <div>
+                        <img src=".\assets\images\circle2.png" alt="circle2" id="circle4">
+                        <h2>Vous cherchez un tuto ?</h2>
+                        <p class="h-txt">Découvrez notre section tutos, où nous vous proposons des guides pratiques et des astuces pour entretenir et réparer vous-même vos appareils électroménagers. Profitez de notre expertise pour prolonger la durée de vie de vos équipements en toute simplicité.</p>
+                        <button class="generalbutton">Voir nos tutos</button>
+                    </div>
+                </div>
+            </div>
+            <div class="rdv">
+                <h2>Vous souhaitez nous contacter ?</h2>
+                <div class="contentcontact">
+                    <div class="contact">
+                        <div class="contactcontent">
+                            <div class="furniturecontact">
+                                <div class="myfurniture">
+                                    <div class="icons">
+                                        <img src=".\assets\images\washingmachine.png" alt="washingmachine">
+                                    </div>
+                                    <div class="furnitureinfos">
+                                        <p class="presentation">Mon appareil</p>
+                                        <div class="furnitureresult">
+                                            <p class="txt">Bosch WAN28258FR</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src=".\assets\images\cross.png" alt="cross">
+                                </div>
+                            </div>
+                            <div class="contactbox">
+                                <p class="txt">Je souhaite</p>
+                                <div class="contactboxbis">
+                                    <button class="buttonchoice">Réparation</button>
+                                    <button class="buttonchoice">Dépannage</button>
+                                </div>
+                            </div>
+                            <div class="identify">
+                                <div class="contactbox">
+                                    <p class="txt">Nom</p>
+                                    <div class="contactboxbis">
+                                        <input type="text" placeholder="Nom" class="inputchoice">
+                                    </div>
+                                </div>
+                                <div class="contactbox">
+                                    <p class="txt">Prénom</p>
+                                    <input type="text" placeholder="Prénom" class="inputchoice">
+                                </div>
+                            </div>
+                            <div class="contactbox">
+                                <p class="txt">Email</p>
+                                <input type="text" placeholder="jesuisunclient@mail.com" class="inputchoice">
+                            </div>
+                            <div class="contactbox">
+                                <p class="txt">Message</p>
+                                <textarea name="text" placeholder="Je souhaite faire réparer ma machine à laver Philips de modèle EWS34... " class="inputchoicemessage"></textarea></textarea>
+                            </div>
+                            <a href="#" class="BontonRouge buttonsend">Envoyer</a>
+                        </div>
+                    </div>
+                    <div class="map">
+                        <img src=".\assets\images\map.png" alt="Map">
+                        <div class="contentinfo">
+                            <img src=".\assets\images\hear.png" alt="hear">
+                            <p class="h-txt">40 rue Michelet - 35700 Rennes</p>
+                        </div>
+                        <div class="contentinfo">
+                            <img src=".\assets\images\call.png" alt="call">
+                            <p class="h-txt">02 99 515 151</p>
+                        </div>
+                        <div class="contentinfo">
+                            <img src=".\assets\images\mail.png" alt="mail">
+                            <p class="h-txt">contact@repartout.fr</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+
+</html>
