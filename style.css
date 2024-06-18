@@ -250,6 +250,7 @@ h1 span{
     /*JS fin*/
 .search-txt{
     display: flex;
+    flex-direction: column;
     position: relative;
 }
 .exemple{
