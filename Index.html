@@ -16,24 +16,37 @@
         <div class="background-container">
             <div class="Header">
                 <div class="Logo-Container">
-                    <img src=".\assets\images\logo.png" alt="Repar'Tout">
+                    <img src="./assets/images/logo.png" alt="Repar'Tout">
                 </div>
                 <div class="ButtonNav-Container">
                     <a href="#" class="ButtonNav">Nos services</a>
                     <a href="#" class="ButtonNav">Nos tutos</a>
                     <a href="#" class="BontonRouge">Contact</a>
                 </div>
+                <div class="ButtonNavContainerMobile">
+                    <button id="menu-burger" class="menu-burger">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </button>
+                    <div id="side-menu" class="side-menu">
+                        <a href="#">Nos services</a>
+                        <a href="#">Nos tutos</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
             </div>
+            <div class="ligne"></div>
             <div class="top-container">
                 <div class="h1-container">
-                    <img src=".\assets\images\circle.png" alt="circle" id="circle">
-                    <h1>Donnez une seconde vie à vos électroménagers !</h1>
+                    <img src="./assets/images/circle.png" alt="circle" id="circle">
+                    <h1>Donnez <span><br></span>une seconde vie à vos électroménagers !</h1>
                     <p class="h-txt">Prolongez la durée de vie de vos appareils avec nos services de réparation et d'entretien. Faites un geste pour la planète tout en réalisant des économies !</p>
                 </div>
                 <div class="visual-container">
                     <div class="visual">
                         <div class="frame"></div>
-                        <img src=".\assets\images\repairman.png" alt="repairman" class="repairman">
+                        <img src="./assets/images/repairman.png" alt="repairman" class="repairman">
                     </div>
                     <a href="#" class="BontonRouge">Prendre contact avec un professionel</a>
                 </div>
@@ -76,7 +89,7 @@
                     <div class="furniture">
                         <div class="myfurniture">
                             <div class="icons">
-                                <img src=".\assets\images\washingmachine.png" alt="washingmachine">
+                                <img src="./assets/images/washingmachine.png" alt="washingmachine">
                             </div>
                             <div class="furnitureinfos">
                                 <p class="presentation">Mon appareil</p>
@@ -89,7 +102,7 @@
                     <div class="validation">
                         <div class="result">
                             <div class="yeah">
-                                <img src=".\assets\images\yeah.png" alt="yeah">
+                                <img src="./assets/images/yeah.png" alt="yeah">
                             </div>
                             <div class="content">
                                 <div class="contentresult">
@@ -102,9 +115,12 @@
                     </div>
                 </div>
             </div>
+            <div class="searchmobile">
+
+            </div>
             <div class="tutoresultats">
                 <div class="h2-container">
-                    <img src=".\assets\images\circle.png" alt="circle" id="circle2">
+                    <img src="./assets/images/circle.png" alt="circle" id="circle2">
                     <h2>Vous souhaitez <br> le réparer vous-même ?</h2>
                     <p class="h-txt">Découvrez notre sélection de tutos en lien avec votre produit</p>
                 </div>
@@ -126,21 +142,22 @@
             </div>
             <div class="services">
                 <div class="contentservice">
-                    <img src=".\assets\images\circle.png" alt="circle" id="circle3">
-                    <h2>Découvrez nos services</h2>
+                    <img src="./assets/images/circle.png" alt="circle" id="circle3">
+                    <h2>Découvrez <span><br></span>nos services</h2>
                     <p class="h-txt">Découvrez nos services de réparation d'électroménager, avec des techniciens qualifiés qui assurent des diagnostics rapides et des réparations efficaces pour toutes les marques et modèles. Profitez de notre expertise professionnelle et de tarifs compétitifs pour un dépannage fiable et durable.</p>
                     <button class="generalbutton">Voir nos services</button>
                 </div>
                 <div class="exempleservices">
-                    <img src=".\assets\images\exemples.png" alt="exemple">
+                    <img src="./assets/images/exemples.png" alt="exemple">
                 </div>
             </div>
             <div class="tutoplus">
-                <img src=".\assets\images\tutoplus.png" alt="tutoplus" id="tutoplusimg">
+                <button class="generalbutton">Voir nos tutos</button>
+                <img src="./assets/images/tutoplus.png" alt="tutoplus" id="tutoplusimg">
                 <div class="contenttutoplus">
                     <div>
-                        <img src=".\assets\images\circle2.png" alt="circle2" id="circle4">
-                        <h2>Vous cherchez un tuto ?</h2>
+                        <img src="./assets/images/circle2.png" alt="circle2" id="circle4">
+                        <h2>Vous cherchez <span><br></span>un tuto ?</h2>
                         <p class="h-txt">Découvrez notre section tutos, où nous vous proposons des guides pratiques et des astuces pour entretenir et réparer vous-même vos appareils électroménagers. Profitez de notre expertise pour prolonger la durée de vie de vos équipements en toute simplicité.</p>
                         <button class="generalbutton">Voir nos tutos</button>
                     </div>
@@ -154,7 +171,7 @@
                             <div class="furniturecontact">
                                 <div class="myfurniture">
                                     <div class="icons">
-                                        <img src=".\assets\images\washingmachine.png" alt="washingmachine">
+                                        <img src="./assets/images/washingmachine.png" alt="washingmachine">
                                     </div>
                                     <div class="furnitureinfos">
                                         <p class="presentation">Mon appareil</p>
@@ -164,7 +181,7 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <img src=".\assets\images\cross.png" alt="cross">
+                                    <img src="./assets/images/cross.png" alt="cross">
                                 </div>
                             </div>
                             <div class="contactbox">
@@ -192,31 +209,139 @@
                             </div>
                             <div class="contactbox">
                                 <p class="txt">Message</p>
-                                <textarea name="text" placeholder="Je souhaite faire réparer ma machine à laver Philips de modèle EWS34... " class="inputchoicemessage"></textarea></textarea>
+                                <textarea name="text" placeholder="Je souhaite faire réparer ma machine à laver Philips de modèle EWS34... " class="inputchoicemessage"></textarea>
                             </div>
-                            <a href="#" class="BontonRouge buttonsend">Envoyer</a>
+                            <div class="rdvbuttoncontainer">
+                                <a href="#" class="BontonRouge buttonsend">Contacter un professionnel</a>
+                                <a href="#" class="BontonRouge buttonsendmobile">Envoyer</a>
+                                <div class="rdvbuttonspace"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="map">
-                        <img src=".\assets\images\map.png" alt="Map">
+                        <img src="./assets/images/map.png" alt="Map">
                         <div class="contentinfo">
-                            <img src=".\assets\images\hear.png" alt="hear">
+                            <img src="./assets/images/hear.png" alt="hear">
                             <p class="h-txt">40 rue Michelet - 35700 Rennes</p>
                         </div>
                         <div class="contentinfo">
-                            <img src=".\assets\images\call.png" alt="call">
+                            <img src="./assets/images/call.png" alt="call">
                             <p class="h-txt">02 99 515 151</p>
                         </div>
                         <div class="contentinfo">
-                            <img src=".\assets\images\mail.png" alt="mail">
+                            <img src="./assets/images/mail.png" alt="mail">
                             <p class="h-txt">contact@repartout.fr</p>
                         </div>
                     </div>
                 </div>
 
             </div>
+            <div class="avis">
+                <img src="./assets/images/circle.png" alt="circle" id="circle5">
+                <h2>Les champions du service, selon vous !</h2>
+                <div class="avisbox">
+                    <div class="avisplus">
+                        <img src="./assets/images/Messi.png" alt="messi">
+                        <div class="avisboxcontent">
+                            <p class="avisname">Lionel Messi</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="h-txt">“Vous voyez ma célébration sur ma photo de profil ? Je l’avais dédiée ce jour-là à l’entreprise Répar’tout, qui est intervenue de manière remarquable la veille de la finale de la coupe du monde afin de réparer mon grille-pain. Encore merci Répar’tout.”</p>
+                        </div>
+                    </div>
+                    <div class="avisplus">
+                        <img src="./assets/images/Rihanna.png" alt="riri">
+                        <div class="avisboxcontent">
+                            <p class="avisname">Rihanna</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="h-txt">“J’adore prendre une boisson fraîche dans les loges après chaque concert, le problème c’est que sans frigo, c’est plus compliqué... Merci à Répar’tout d’avoir réparé mon frigo aussi rapidement !”</p>
+                        </div>
+    
+                    </div>
+                    <div class="avisplus">
+                        <img src="./assets/images/Nadal.png" alt="nadou">
+                        <div class="avisboxcontent">
+                            <p class="avisname">Rafael Nadal</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="h-txt">“On pourrait croire sur cette photo que je célèbre un point important lors d’un match. Il n’en est rien. Pour être honnête, à ce moment du match, mon coach venait de m’apprendre que Répar’tout proposait une réduction de 50% sur tous leurs services pendant 1 mois. Du jamais vu.”</p>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="carousel-item avisplus">
+                            <img src="./assets/images/Messi.png" alt="messi">
+                            <div class="avisboxcontent">
+                                <p class="avisname">Lionel Messi</p>
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="h-txt">“Vous voyez ma célébration sur ma photo de profil ? Je l’avais dédiée ce jour-là à l’entreprise Répar’tout, qui est intervenue de manière remarquable la veille de la finale de la coupe du monde afin de réparer mon grille-pain. Encore merci Répar’tout.”</p>
+                            </div>
+    
+                        </div>
+                        <div class="carousel-item avisplus">
+                            <img src="./assets/images/Rihanna.png" alt="riri">
+                            <div class="avisboxcontent">
+                                <p class="avisname">Rihanna</p>
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="h-txt">“J’adore prendre une boisson fraîche dans les loges après chaque concert, le problème c’est que sans frigo, c’est plus compliqué... Merci à Répar’tout d’avoir réparé mon frigo aussi rapidement !”</p>
+                            </div>
+    
+                        </div>
+                        <div class="carousel-item avisplus">
+                            <img src="./assets/images/Nadal.png" alt="nadou">
+                            <div class="avisboxcontent">
+                                <p class="avisname">Rafael Nadal</p>
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="h-txt">“On pourrait croire sur cette photo que je célèbre un point important lors d’un match. Il n’en est rien. Pour être honnête, à ce moment du match, mon coach venait de m’apprendre que Répar’tout proposait une réduction de 50% sur tous leurs services pendant 1 mois. Du jamais vu.”</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div class="carousel-indicators">
+                        <span class="indicator active" data-slide="0"></span>
+                        <span class="indicator" data-slide="1"></span>
+                        <span class="indicator" data-slide="2"></span>
+                    </div>
+                </div>
+                <button class="generalbutton">Voir nos avis Google <img src="./assets/images/google.png" alt="google"></button>
+            </div>
         </div>
-
+        <div class="footercontainer"></div>
     </body>
-
 </html>

@@ -47,6 +47,9 @@ a {
 
 
 /*CSS*/
+p{
+    line-height: normal;
+}
 body {
     font-family: "DM Sans", sans-serif;
     margin: 0;
@@ -57,6 +60,7 @@ body {
 .background-container{
     position: relative;
     width: 1160px;
+    padding: 40px 140px 0px;
     margin: 0 auto;
 }
 .overlay{
@@ -73,13 +77,8 @@ body {
 
 /*HEADER*/
 .Header{
-    top: 40px;
-    left: 140px;
-    width: 1160px;
-    height:40px;
     display: flex;
     align-items: center;
-    margin: 40px auto;
     justify-content: space-between;
 }
 .Logo-Container{
@@ -96,26 +95,31 @@ body {
     font-weight: 700;
     color: #E8DCFF;
 }
-
+.ButtonNavContainerMobile{
+    display: none;
+}
 .BontonRouge{
     font-size: 16px;
     font-weight: 700;
     color: #050418;
     background-color: #FD7272;
     padding: 10px 20px 10px 20px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
-
+/*HEADER fin*/
+.ligne{
+    display: none;
+}
 /*H1*/
 .top-container{
 
     display: flex;
     justify-content: space-between;
-    margin: 250px auto 0;
+    margin: 180px auto 0;
 }
 .h1-container{
-    width: 560px;
-    row-gap: 20px;
+    position: relative;
+    width: 48%;
 }
 h1{
     position: relative;
@@ -123,27 +127,31 @@ h1{
     font-weight: 700;
     color: #E6DAFF;
     padding-bottom: 20px;
+    line-height:normal;
     z-index: 1;
+}
+h1 span{
+    display: none;
 }
 #circle{
     position: absolute;
     width: 298px;
     height: 91px;
-    left: 200px;
-    top: 254px;
+    left: 185px;
+    top: -20px;
     z-index: 0;
 }
 .h-txt{
     font-size: 16px ;
     font-weight: 400;
     color: #E6DAFF;
+    line-height: normal;
 }
-/*H1 Repairman*/
+    /*H1 Repairman*/
 .visual-container{
     width: 360px;
     display: grid;
     place-items: center;
-    margin-right: 100px;
 }
 .visual{
     position: relative;
@@ -172,8 +180,11 @@ h1{
     left: 50%;
     transform: translate(-50%);
 }
-
+/*H1 fin*/
 /*Search bar*/
+.searchmobile{
+    display: none;
+}
 .search-drop{
     position: relative;
     display: flex;
@@ -189,6 +200,7 @@ h1{
     display: flex;
     height: 100%;
 }
+    /*JS*/
 .dropdown{
     position: relative;
     border-right: 2px solid #050418;
@@ -235,8 +247,9 @@ h1{
 .dropdown.show .dropdown-content {
     display: block;
 }
+    /*JS fin*/
 .search-txt{
-    display: flexbox;
+    display: flex;
     position: relative;
 }
 .exemple{
@@ -313,9 +326,10 @@ border-radius: 0px 0px 20px 20px;
     gap: 10px;
     margin-top: 40px;
 }
-
+/*Search bar fin*/
 /*H2*/
 .h2-container{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -327,20 +341,23 @@ h2{
     position: relative;
     display: flex;
     align-items: center;
-    /*width: 370px;*/
     font-size: 32px;
     font-weight: 700;
     color: #E6DAFF;
     padding-bottom: 20px;
     z-index: 1;
+    line-height: normal;
+}
+h2 span{
+    display: none;
 }
 /*Tuto result*/
 #circle2{
     position: absolute;
     width: 252px;
     height: 62px;
-    left: 505px;
-    top: 1095px;
+    left: 170px;
+    top: 30px;
     z-index: 0;
 }
 .tutoresultats{
@@ -371,6 +388,8 @@ h2{
 }
 .generalbutton{
     display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 16px;
     font-weight: 700;
     color: #E8DDFE;
@@ -387,6 +406,12 @@ h2{
     position: relative;
     margin-top: 200px;
 }
+.tutoplus .contenttutoplus .generalbutton{
+    display: block;
+}
+.tutoplus .generalbutton{
+    display: none;
+}
 .contentservice{
     width: 33%;
 }
@@ -395,7 +420,7 @@ h2{
     width: 216px;
     height: 55px;
     left: 13%;
-    top: -12px;
+    top: -5px;
     z-index: 0;
 }
 .exempleservices{
@@ -421,7 +446,7 @@ h2{
     width: 154px;
     height: 56px;
     left: 79%;
-    top: 32px;
+    top: 22px;
     z-index: 0;
 }
 
@@ -450,7 +475,7 @@ h2{
     align-items: center;
     gap: 350px;
     padding: 20px 40px 20px 40px;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-bottom: 40px;
 }
 .contactbox{
@@ -489,7 +514,7 @@ h2{
     background-color: transparent;
     color: #050418;
     border: 1px solid #050418;
-    border-radius: 60px;
+    border-radius: 10px;
     padding: 10px 20px;
     box-sizing: border-box;
 }
@@ -499,16 +524,27 @@ h2{
     background-color: transparent;
     color: #050418;
     border: 1px solid #050418;
-    border-radius: 35px;
+    border-radius: 10px;
     padding: 20px;
     box-sizing: border-box;
+}
+.rdvbuttoncontainer{
+    display: flex;
+    width: 100%;
+    gap: 40px;
 }
 .buttonsend{
     display: flex;
     justify-content: center;
+    padding: 20px 30px 20px 30px;
     width: 50%;
 }
-
+.buttonsendmobile{
+    display: none;
+}
+.rdvbuttonspace{
+    width: 60%;
+}
 .map{
     display: flex;
     flex-direction: column;
@@ -519,3 +555,314 @@ h2{
     align-items: center;
     gap: 20px;
 }
+/*Avis*/
+.avis  {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 150px;
+    margin-bottom: 140px;
+}
+.carousel-container{
+    display: none;
+}
+#circle5{
+    position: absolute;
+    width: 216px;
+    height: 55px;
+    left: 58%;
+    top: -12px;
+    z-index: 0;
+}
+.avisbox{
+    display: flex;
+    gap: 40px;
+}
+.avisplus{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+    border: 1px solid #E8DDFE;
+    border-radius: 20px;
+}
+.avisboxcontent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.avisname{
+    font-size: 16px;
+    font-weight: 700;
+    color: #E8DDFE;
+}
+.fa-star{
+    color: goldenrod;
+}
+
+
+/* Responsive*/
+
+/*Mobile*/
+
+@media all and (max-width: 1000PX) {
+    .background-container{
+        position: relative;
+        width: 95%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .ButtonNav-Container{
+        display: none;
+    }
+    .ButtonNavContainerMobile{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+    .menu-burger{
+        position: fixed;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+        background: none;
+        border: none;
+        z-index: 2;
+    }
+    .menu-burger div {
+        width: 30px;
+        height: 4px;
+        background-color: #E8DDFE;
+        transition: 0.4s;
+    }
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-6px, 6px);
+    }
+    .change .bar2 {
+        opacity: 0;
+    }
+    .change .bar3 {
+        transform: rotate(45deg) translate(-6px, -6px);
+    }
+    .side-menu {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1;
+    }
+    .side-menu a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    .side-menu a:hover {
+        color: #f1f1f1;
+    } 
+    .side-menu.open {
+        width: 40%;
+    }
+
+    .ligne{
+        display: flex;
+        border: 1px solid #E8DDFE;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .top-container{
+        margin: 0;
+    }
+    h1{
+        position: relative;
+        font-size: 28px;
+        font-weight: 700;
+        padding-bottom: 20px;
+        line-height:normal;
+    }
+    h1 span{
+        display: inline;
+        line-height: normal;
+    }
+    .h1-container{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .h-txt{
+        font-size: 18px ;
+        width: 94%;
+    }
+    #circle{
+        position: absolute;
+        width: 174px;
+        height: 56px;
+        left: 50px;
+        top: 30px;
+        z-index: 0;
+    }
+    .visual-container{
+        display: none;
+    }
+    .search{
+        display: none;
+    }
+    .tutoresultats {
+        display: none;
+    }
+    .services{
+        margin-top:auto;
+    }
+    .contentservice{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    h2{
+        display: inline;
+    }
+    .generalbutton{
+        display: flex;
+        justify-content: center;
+        color: #E8DDFE;
+        background-color: transparent;
+        padding: 20px 30px 20px 30px;
+        border: 2px solid #E8DDFE;
+        border-radius: 10px;
+        width: 95%;
+        margin-top: 20px;
+    }
+    #circle3{
+        width: 216px;
+        height: 55px;
+        left: -10px;
+        top: 35px;
+    }
+    .exempleservices{
+        display: none;
+    }
+    .tutoplus{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 40px;
+    }
+    .tutoplus .contenttutoplus .generalbutton{
+        display: none;
+    }
+    .tutoplus .generalbutton{
+     display: block;
+    }
+    h2 span{
+        display: inline;
+        line-height: normal;
+    }
+    .contenttutoplus{
+        width: 100%;
+    }
+    #circle4{
+        width: 154px;
+        height: 56px;
+        left: -10px;
+        top: 25px;
+    }
+    #tutoplusimg{
+        margin-right: 20px;
+    }    
+    .rdv{
+        margin-top: 40px;
+    }
+    .map{
+        display: none;
+    }
+    .contact{
+        padding: 20px;
+    }
+    .contactboxbis{
+        flex-direction: column;
+    }
+    .contactbox{
+        margin-bottom: 20px;
+    }
+    .identify{
+        flex-direction: column;
+    }
+    .furniturecontact{
+        gap: 0px;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding: 0px 20px 0px 20px;
+    }
+    .buttonchoice{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .rdvbuttoncontainer{
+        display: inline;
+    }
+    .buttonsend{
+        display: none;
+    }
+    .buttonsendmobile{
+        display: flex;
+        justify-content: center;
+    }
+    .rdvbuttonspace{
+        display: none;
+    }
+    #circle5{
+        display: none;
+    }
+    .avis{
+        margin-top: 40px;
+    }
+    .carousel {
+        display: flex;
+        justify-content: space-around;
+        transition: transform 0.5s ease-in-out;
+    }
+    .avisbox{
+        display: none;
+    }
+    .carousel-container{
+        display: flex;
+        position: relative;
+        width: 300px;
+        overflow: hidden;
+        user-select: none;
+    }
+    .carousel-indicators {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .indicator {
+        width: 10px;
+        height: 10px;
+        background-color: #ddd;
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    .indicator.active {
+        background-color: #333;
+    }
+    }
