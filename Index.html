@@ -24,10 +24,8 @@
                     <a href="#" class="BontonRouge">Contact</a>
                 </div>
                 <div class="ButtonNavContainerMobile">
-                    <button id="menu-burger" class="menu-burger">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
+                    <button id="menu-burger" class="menu-burger" >
+                        <img src="./assets/images/burger.png" alt="burger">
                     </button>
                     <div id="side-menu" class="side-menu">
                         <a href="#">Nos services</a>
@@ -116,7 +114,78 @@
                 </div>
             </div>
             <div class="searchmobile">
-
+                <div class="search-container-mobile">
+                    <div class="search-input-mobile">
+                        <div class=" search-txt">
+                            <input type="text" id="search-mobile" placeholder="J'ai un aspirateur..." class="exemple">
+                            <div class="line"></div>
+                        </div>
+                        <div class="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    </div>
+                    <div class="search-filter-mobile">
+                        <div class="ligne-filter"></div>
+                        <button id="filter-btn" class="filter-button"><img src="assets/images/filtres.png" alt="filtres"></button>
+                    </div>
+                </div>
+                <div class="filters" id="filters">
+                    <div class="filter-options">
+                        <select class="select-search-mobile">
+                            <option value="type0" class="select-value-mobile">Mon type d'appareil</option>
+                            <option value="type1" class="select-value-mobile">Appareil 1</option>
+                            <option value="type2" class="select-value-mobile">Appareil 2</option>
+                            <option value="type3" class="select-value-mobile">Appareil 3</option>
+                        </select>
+                    </div>
+                    <div class="ligne"></div>
+                    <div class="filter-options">
+                        <select class="select-search-mobile">
+                            <option value="marque0" class="select-value-mobile">Ma marque</option>
+                            <option value="marque1" class="select-value-mobile">Marque 1</option>
+                            <option value="marque2" class="select-value-mobile">Marque 2</option>
+                            <option value="marque3" class="select-value-mobile">Marque 3</option>
+                        </select>
+                    </div>
+                    <div class="ligne"></div>
+                    <div class="filter-options">
+                        <select class="select-search-mobile">
+                            <option value="model0" class="select-value-mobile">Mon modèle</option>
+                            <option value="model1" class="select-value-mobile">Model 1</option>
+                            <option value="model2" class="select-value-mobile">Model 2</option>
+                            <option value="model3" class="select-value-mobile">Model 3</option>
+                        </select>
+                    </div>
+                    <div class="ligne"></div>
+                    <div class="search-bar-result">
+                        <div class="furniture">
+                            <div class="myfurniture">
+                                <div class="icons">
+                                    <img src="./assets/images/washingmachine.png" alt="washingmachine">
+                                </div>
+                                <div class="furnitureinfos">
+                                    <p class="presentation">Mon appareil</p>
+                                    <div class="furnitureresult">
+                                        <p class="txt">Bosch WAN28258FR</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="validation">
+                            <div class="result">
+                                <div class="yeah">
+                                    <img src="./assets/images/yeah.png" alt="yeah">
+                                </div>
+                                <div class="content">
+                                    <div class="contentresult">
+                                        <p class="presentation">Bonne nouvelle !</p>
+                                        <p class="txt">Votre produit est réparable chez nous.</p>
+                                    </div>
+                                    <button class="buttoncontact">Prendre contact<i class="fa-regular fa-envelope"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            
             </div>
             <div class="tutoresultats">
                 <div class="h2-container">
@@ -287,8 +356,8 @@
                 </div>
                 <div class="carousel-container">
                     <div class="carousel">
-                        <div class="carousel-item avisplus">
-                            <img src="./assets/images/Messi.png" alt="messi">
+                        <div class="carousel-item">
+                            <img src="./assets/images/Messi.png" alt="messi" class="avis-img-mobile">
                             <div class="avisboxcontent">
                                 <p class="avisname">Lionel Messi</p>
                                 <div class="star">
@@ -300,10 +369,9 @@
                                 </div>
                                 <p class="h-txt">“Vous voyez ma célébration sur ma photo de profil ? Je l’avais dédiée ce jour-là à l’entreprise Répar’tout, qui est intervenue de manière remarquable la veille de la finale de la coupe du monde afin de réparer mon grille-pain. Encore merci Répar’tout.”</p>
                             </div>
-    
                         </div>
-                        <div class="carousel-item avisplus">
-                            <img src="./assets/images/Rihanna.png" alt="riri">
+                        <div class="carousel-item">
+                            <img src="./assets/images/Rihanna.png" alt="riri" class="avis-img-mobile">
                             <div class="avisboxcontent">
                                 <p class="avisname">Rihanna</p>
                                 <div class="star">
@@ -315,10 +383,9 @@
                                 </div>
                                 <p class="h-txt">“J’adore prendre une boisson fraîche dans les loges après chaque concert, le problème c’est que sans frigo, c’est plus compliqué... Merci à Répar’tout d’avoir réparé mon frigo aussi rapidement !”</p>
                             </div>
-    
                         </div>
-                        <div class="carousel-item avisplus">
-                            <img src="./assets/images/Nadal.png" alt="nadou">
+                        <div class="carousel-item">
+                            <img src="./assets/images/Nadal.png" alt="nadou" class="avis-img-mobile">
                             <div class="avisboxcontent">
                                 <p class="avisname">Rafael Nadal</p>
                                 <div class="star">
@@ -330,13 +397,12 @@
                                 </div>
                                 <p class="h-txt">“On pourrait croire sur cette photo que je célèbre un point important lors d’un match. Il n’en est rien. Pour être honnête, à ce moment du match, mon coach venait de m’apprendre que Répar’tout proposait une réduction de 50% sur tous leurs services pendant 1 mois. Du jamais vu.”</p>
                             </div>
-    
                         </div>
                     </div>
-                    <div class="carousel-indicators">
-                        <span class="indicator active" data-slide="0"></span>
-                        <span class="indicator" data-slide="1"></span>
-                        <span class="indicator" data-slide="2"></span>
+                    <div class="dots">
+                        <span class="dot" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
                     </div>
                 </div>
                 <button class="generalbutton">Voir nos avis Google <img src="./assets/images/google.png" alt="google"></button>
