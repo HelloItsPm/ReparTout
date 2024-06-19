@@ -602,7 +602,11 @@ h2 span{
     color: #E8DDFE;
 }
 .fa-star{
-    color: goldenrod;
+    color: #FD7272;
+}
+.star{
+    display: flex;
+    gap: 10px;
 }
 
 
@@ -810,6 +814,7 @@ h2 span{
         flex-direction: column;
         background-color: #E8DDFE;
         margin-top: 0px;
+        margin-bottom: 20px;
         border-radius: 10px;
         }
     .furniture{
@@ -853,6 +858,7 @@ h2 span{
     }
     h2{
         display: inline;
+        margin-top: 20px;
     }
     .generalbutton{
         display: flex;
@@ -867,9 +873,9 @@ h2 span{
     }
     #circle3{
         width: 216px;
-        height: 55px;
+        height: 65px;
         left: -10px;
-        top: 35px;
+        top: 45px;
     }
     .exempleservices{
         display: none;
@@ -972,6 +978,7 @@ h2 span{
         padding: 10px;
         box-sizing: border-box;
         display: flex;
+        gap: 20px;
         flex-direction: column;
         align-items: center;
         border: 1px solid #E8DDFE;
@@ -998,11 +1005,14 @@ h2 span{
         width: 10px;
         height: 10px;
         margin: 0 5px;
-        background-color: #bbb;
+        background-color: #E8DDFE;
+        opacity: 0.6;
         border-radius: 50%;
         cursor: pointer;
     }
     .dot.active {
-        background-color: #717171;
+        background-color: #E8DDFE;
+        opacity: 1;
+        border: 1px solid #E8DDFE;
     }
     }
