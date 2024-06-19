@@ -701,7 +701,7 @@ h2 span{
     }
     .h1-container{
         width: 100%;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
     .h-txt{
         font-size: 18px ;
@@ -902,7 +902,7 @@ h2 span{
         width: 154px;
         height: 56px;
         left: -10px;
-        top: 25px;
+        top: 35px;
     }
     #tutoplusimg{
         margin-right: 0px;
@@ -910,7 +910,8 @@ h2 span{
         width: 95%;
     }    
     .rdv{
-        margin-top: 40px;
+        margin-top: 20px;
+        gap: 0px;
     }
     .map{
         display: none;
@@ -956,6 +957,7 @@ h2 span{
     .avis{
         margin-top: 40px;
         align-items: normal;
+        gap: 0px;
     }
     .carousel-container {
         display: block;
