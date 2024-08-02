@@ -59,7 +59,7 @@ body {
 }
 .background-container{
     position: relative;
-    width: 1160px;
+    width:auto;
     padding: 40px 140px 0px 140px;
     margin: 0 auto;
 }
@@ -611,6 +611,164 @@ h2 span{
 
 
 /* Responsive*/
+
+/*Tablette*/
+@media all and (max-width: 1300PX) {
+    h1{
+        position: relative;
+        font-size: 24px;
+        font-weight: 700;
+        color: #E6DAFF;
+        padding-bottom: 20px;
+        line-height:normal;
+        z-index: 1;
+    }
+    .search{
+        display: none;
+    }
+    .searchmobile{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .search-container-mobile{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        box-shadow: inset 0 0 0 2px #050418;
+        border-radius: 10px;
+        background-color: #FFFFFF;
+        align-items: center;
+        padding: 20px 20px 20px 30px;
+        margin-bottom: 20px;
+    }
+    .search-input-mobile{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+    #search-mobile {
+        font-size: 16px;
+        font-weight: 400;
+        width: 100%;
+    }
+    .line{
+        height: 1px;
+        width: 100%;
+        background-color: #050418;
+        opacity: 0.4;
+    }
+    .fa-magnifying-glass{
+        height: auto;
+        width: auto;
+    }
+    .search-filter-mobile{
+        display: flex;
+        gap: 20px;
+    }
+    #filter-btn {
+        display: flex;
+        padding: 5px 10px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .ligne-filter{
+        height: auto;
+        width: 1px;
+        background-color: #050418;
+    }
+    .filters {
+        display: none;
+        flex-direction: column;
+        background-color: transparent;
+    }
+    .filter-options {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        background-color: transparent;
+    }
+    .select-search-mobile{
+        background-color: transparent;
+        border: none;
+        font-size: 16px;
+        font-weight: 700;
+        color: #E8DDFE;
+    }
+    .select-value-mobile{
+        background-color: #050418;
+        font-size: 16px;
+        font-weight: 700;
+        color: #E8DDFE;
+        padding: 5px 0px 5px 0px;
+    }
+    .filter-options select {
+        padding: 5px;
+    }
+    .buttoncontact{
+        display: none;
+    }
+    .search-bar-result{
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: #E8DDFE;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        }
+    .furniture{
+        display: flex;
+        width: 100%;
+        height: 25%;
+        align-items: center;
+        padding: 20px 40px 20px 40px;
+        gap: 40px;
+    }
+    .validation{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: auto;
+        height: auto;
+        align-items: center;
+        background-color: #CFFFED;
+        padding: 40px;
+        border-radius: 0px 0px 20px 20px;
+        gap: 40px;
+    }
+    .result {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contentcontact {
+        display: flex;
+        flex-direction: column;
+    }
+    .contactboxbis {
+        display: flex;
+        flex-direction: column;
+    }
+    .identify {
+        display: flex;
+        flex-direction: column;
+    }
+    .avisbox {
+        flex-direction: column;
+    }
+    .tutos {
+        flex-direction: column;
+    }
+    .tutoplus {
+        flex-direction: column;
+    }
+    .exempleservices {
+        display: none;
+    }
+}
 
 /*Mobile*/
 
